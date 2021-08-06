@@ -28,7 +28,7 @@
 	<bean id="sqlSessionFactory"
 		  class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource"/>
-		<property name="mapperLocations" value="classpath:com/coderby/myapp/*.xml"/>
+		<property name="mapperLocations" value="classpath:com/coderby/myapp/**/*.xml"/>
 	</bean><!--  SQL 구문을 작성한 XML 파일의 위치 -->
 	
 	<bean id="txManager"
